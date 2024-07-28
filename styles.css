@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("./Images/body-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.weather-container {
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.weather-container h2 {
+  margin-bottom: 10px;
+  text-align: center; /* Center-aligns the heading */
+  font-size: 20px;
+  color: white;
+}
+
+select,
+button {
+  display: block;
+  margin: 10px auto;
+  font-size: 16px; /* Larger font size for better readability */
+  padding: 10px;
+}
+
+.weather-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content inside the city div */
+  text-align: center;
+  margin-bottom: 20px;
+  color: white; /* White text color for contrast */
+}
+
+.city h2 {
+  font-size: 24px; /* Larger font size for city name */
+}
+
+.city p {
+  font-size: 18px; /* Larger font size for weather details */
+}
+
+.world-clock-container {
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white; /* White text color */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center; /* Center-aligns the heading and content */
+}
+
+.world-clock-container h2 {
+  font-size: 20px; /* Heading font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.world-clock {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Responsive grid columns */
+  gap: 20px; /* Space between clock columns */
+  justify-content: center; /* Center-aligns the grid within its container */
+}
+
+.clock {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Transparent black background for individual clocks */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px; /* Digital clock font size */
+  text-align: center;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  color: white; /* White text color */
+  font-size: 16px; /* Medium font size */
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Vertical padding */
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Align to the bottom */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
